@@ -1,7 +1,13 @@
+import HeroSection from "../sections/HeroSection";
+import NewArrivals from "../sections/NewArrivals";
+import TestimonialsSection from "../sections/TestimonialsSection";
+
 export default function HomePage(){
     return(
         <>
-        <h1>Home Page</h1>
+        <HeroSection/>
+        <NewArrivals/>
+        <TestimonialsSection/>
         </>
     )
 }

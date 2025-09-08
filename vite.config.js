@@ -1,18 +1,11 @@
-import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import LenisScroll from "./components/LenisScroll";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite';
 
-export default function App() {
-    return (
-        <>
-            <LenisScroll />
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-            </Routes>
-            <Footer />
-        </>
-    );
-}
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})

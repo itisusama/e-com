@@ -11,14 +11,14 @@ export default function Footer() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
-                <img className="size-8 aspect-square" src="/assets/footer-logo.svg" alt="footer logo" />
+                <h2>E-Com</h2>
                 {footerData.map((section, index) => (
                     <div key={index}>
                         <p className="text-slate-100 font-semibold">{section.title}</p>
                         <ul className="mt-2 space-y-2">
                             {section.links.map((link, index) => (
                                 <li key={index}>
-                                    <Link href={link.href} className="hover:text-pink-600 transition">
+                                    <Link href={link.href} className="hover:text-blue-600 transition">
                                         {link.name}
                                     </Link>
                                 </li>
@@ -36,16 +36,16 @@ export default function Footer() {
                 <p className="max-w-60">Making every customer feel valued—no matter the size of your audience.</p>
                 <div className="flex items-center gap-4 mt-3">
                     <a href="https://dribbble.com/prebuiltui" target="_blank" rel="noreferrer">
-                        <DribbbleIcon className="size-5 hover:text-pink-500" />
+                        <DribbbleIcon className="size-5 hover:text-blue-500" />
                     </a>
                     <a href="https://www.linkedin.com/company/prebuiltui" target="_blank" rel="noreferrer">
-                        <LinkedinIcon className="size-5 hover:text-pink-500" />
+                        <LinkedinIcon className="size-5 hover:text-blue-500" />
                     </a>
                     <a href="https://x.com/prebuiltui" target="_blank" rel="noreferrer">
-                        <TwitterIcon className="size-5 hover:text-pink-500" />
+                        <TwitterIcon className="size-5 hover:text-blue-500" />
                     </a>
                     <a href="https://www.youtube.com/@prebuiltui" target="_blank" rel="noreferrer">
-                        <YoutubeIcon className="size-6 hover:text-pink-500" />
+                        <YoutubeIcon className="size-6 hover:text-blue-500" />
                     </a>
                 </div>
                 <p className="mt-3 text-center">&copy; {new Date().getFullYear()} <a href="https://prebuiltui.com">PrebuiltUI</a></p>
